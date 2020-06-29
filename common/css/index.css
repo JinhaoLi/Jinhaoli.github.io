@@ -1,15 +1,25 @@
 body {
-    margin: 0px;
+    margin: 0;
 }
 
+li{
+	display: list-item;
+    text-align: -webkit-match-parent;
+}
+/*======================================*/
+header{
+	width:100%;
+	height: 50px;
+	background-color: rgba(73,73,73,1.00)
+}
 
 /*================LEFT=================*/
 
 #left-bar {
     position: absolute;
-    background-color: khaki;
+    background-color: #333333;
     width: 260px;
-    height: 2160px;
+	height: 960px;
 }
 
 #header-ico {
@@ -18,48 +28,115 @@ body {
     border-radius: 300px;
     width: 128px;
     height: 128px;
-    margin: 0 auto;
+    margin: 30px auto;
     position: relative;
     overflow: hidden;
     background: teal;
 }
 
 .header-info {
-    margin: 20px auto;
+    margin: 20px 40%;
     width: 100%;
     height: 100px;
-    background: teal;
 }
 
-
+#name{
+	color:#f6f6f6;
+}
 /*=================MAIN================*/
 
 main {
-    /* position: absolute; */
-    background-color: rgb(140, 240, 173);
-    margin-left: 260px;
+/*	height: 100%;*/
+    background-color: #585858;
+    margin-left: 10%;
 }
 
 #content {
-    height: 2160px;
-    width: max-content;
-    position: absolute;
-    background-color: lightcoral;
+	height: 100%;
+	position: relative;
+    background-color: #A74646;
 }
 
 .main-content {
-    margin: 10px 100px;
-    width: 780px;
-    height: 95%;
-    background-color: white;
+    margin: 0px 20%;
+	height: 920px;
+    background-color: #FFFFFF;
 }
 
+.item{
+	padding: 20px;
+	margin-left: 10%;
+	overflow:hidden;
+/*	list-style: none;*/
+/*	position: relative;*/
+	border-bottom: 1px solid rgba(88,88,88,1.00)
+}
+
+.item-img{
+	position: relative;
+    float: left;
+    overflow: hidden;
+    border-radius: 3px;
+    transition: box-shadow .3s ease 0s;
+}
+
+.item-img a{
+
+}
+
+.item-meta{
+	margin-top: 20px;
+/*	border: 2px solid rgba(247,27,30,1.00);*/
+}
+
+
+
+.item-title{
+	line-height: 1.4;
+	height: 30px;
+	padding-left:320px;
+	margin-bottom: 20px;
+}
+
+span{
+	font-size: 16px;
+	color: #3F3F3Fff;
+	padding: 30px;
+}
+
+.preview{
+	border-radius: 2px;
+	width: 300px;
+	margin-left: 320px;
+	padding: 20px;
+	border: 2px dotted rgba(53,142,225,1.00);
+	color: #313131;
+}
+
+ul li div a{
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	color: #000000;
+}
+
+ul li div a:hover{
+	color:#005CFF;    /*设置颜色为红色*/
+    font-size:20px;  /*字体变大*/
+    text-decoration: none; /*去掉下划线*/
+}
 
 /*================FOOTER==============*/
 
 footer {
-    width: 100%;
-    height: 200px;
-    /* position: absolute; */
-    background-color: lightslategrey;
+	text-align: center;
+	padding: 35px 0;
+    color: #5f676f;
+    background: #2d3237;
+}
+
+footer div{
+	width: 100%;
+	height: 100px;
+	background-color: #015076;
 }
