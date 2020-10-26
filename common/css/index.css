@@ -79,7 +79,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FF77AE;
+    background-color: #ff69c6;
+	
 }
 
 .bilibili-link:hover {
