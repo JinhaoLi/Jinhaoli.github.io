@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #000000;
 }
 
 li {
@@ -80,7 +81,6 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #ff69c6;
-	
 }
 
 .bilibili-link:hover {
@@ -105,17 +105,16 @@ main {
 }
 
 #content {
-    background-image: url(../img/bg.gif)
+    /* background-image: url(../img/bg.gif) */
     /*    background-color: #FFFFFF;*/
 }
 
 .main-content {
     padding-top: 10px;
     padding-left: 25%;
-    padding-right: 20%;
+    padding-bottom: 20px;
     /*	padding: 0% 25%;*/
     /*	height: 900px;*/
-    width: 100%;
     /*    background-color: #FFFFFF;*/
 }
 

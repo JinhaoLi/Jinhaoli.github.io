@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=0.3, user-scalable=0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.3, maximum-scale=0.3, user-scalable=0" />
     <link rel="stylesheet" href="common/css/index.css">
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script src="./common/script/binddate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./common/script/binddate.js"></script>
 </head>
 
 <body>
@@ -53,11 +53,11 @@
                     </li>
                 </ul>
             </div>
-            <div id="page-button">
+            <!-- <div id="page-button">
                 <button>1</button>
                 <button>2</button>
                 <button>3</button>
-            </div>
+            </div> -->
         </div>
     </main>
 
@@ -66,9 +66,23 @@
 
         </div>
     </footer>
+
+    <script>
+        window.canvasOptions = {
+            autoClear: true,
+            autoCompensate: false,
+            autoPushPop: true,
+            canvas: true,
+            centered: true,
+            desynchronized: false,
+            width: null,
+            height: null
+        };
+    </script>
+
+    <script src='common/script/simplex-noise.min.js'></script>
+    <script src='common/script/XeZBab.js'></script>
+    <script src="common/script/script.js"></script>
 </body>
-<script>
-	
-</script>
 
 </html>
