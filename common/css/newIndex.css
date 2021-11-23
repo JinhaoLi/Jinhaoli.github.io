@@ -6,23 +6,13 @@ body{
 
 #main{
     background:url(../../BlogPostAssets/images/wrapperbg.gif);
-    margin: 0 auto;
+    /* margin-top: 80px;
+    margin-bottom: 150px;
+    margin-left: 10%; */
+    margin: 10% 10%;
     padding: 20 30px;
-    width: 960px;
+    /* width: 960px; */
     height:1900px;
-}
-
-.item{
-    width: 960px;
-    height:200px;
-}
-
-.hello{
-    margin:0 auto;
-    padding:10px;
-    background-color:#f0f;
-    width:200px;
-    height:200px;
 }
 
 #header {
@@ -48,10 +38,24 @@ body{
     color: white;
 }
 
+#header div a{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+#header div a:hover{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(135, 145, 235);
+    text-decoration: none;
+}
+
 #header nav{
     text-align: right;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     padding-right: 2%;
     width: 68%;
     float: left;
@@ -60,5 +64,10 @@ body{
 
 #header nav a{
     color: white;
+    text-decoration: none;
+}
+
+#header nav a:hover{
+    color: rgb(135, 145, 235);
     text-decoration: none;
 }

@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="common/css/index.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./common/script/binddate.js"></script>
+    <script type="text/javascript" src="common/script/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="common/script/snowfall.jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         $(document).snowfall({
+                minSize : 10,
+                maxSize : 40,
+                minSpeed : 0.5,
+                maxSpeed : 3,
+                image: "common/img/snow.png"
+        });
+    });
+    </script>
 </head>
 
 <body>
@@ -26,6 +39,12 @@
         <div class="bilibili-link">
             <a href="https://space.bilibili.com/75965179">
         		bilibili
+        	</a>
+        </div>
+
+        <div class="bilibili-link">
+            <a href="./newIndex.html">
+        		new page
         	</a>
         </div>
 
@@ -60,29 +79,6 @@
             </div> -->
         </div>
     </main>
-
-    <footer>
-        <div>
-
-        </div>
-    </footer>
-
-    <script>
-        window.canvasOptions = {
-            autoClear: true,
-            autoCompensate: false,
-            autoPushPop: true,
-            canvas: true,
-            centered: true,
-            desynchronized: false,
-            width: null,
-            height: null
-        };
-    </script>
-
-    <script src='common/script/simplex-noise.min.js'></script>
-    <script src='common/script/XeZBab.js'></script>
-    <script src="common/script/script.js"></script>
 </body>
 
 </html>
