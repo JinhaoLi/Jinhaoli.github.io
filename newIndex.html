@@ -4,16 +4,37 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="common/css/newIndex.css">
     <title>冬日温暖的小屋子</title>
+    <script type="text/javascript" src="common/script/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="common/script/snowfall.jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         $(document).snowfall({
+                minSize : 10,
+                maxSize : 40,
+                minSpeed : 0.5,
+                maxSpeed : 3,
+                image: "common/img/snow.png"
+        });
+    });
+    </script>
 </head>
 <body>
-
-    <div id="main">
-        <div class="item">
-
+    <header id="header">
+        <div>
+            Home
         </div>
-        <div class="item">
-                text
-        </div>
-    </div>
+        
+        <nav>
+            <a href="#">menu1</a>
+            <a href="#">menu2</a>
+            <a href="#">menu3</a>
+        </nav>
+    </header>
+    <main>
+        <div id="main">
+        
+        </div>    
+    </main>
+    
 </body>
 </html>
