@@ -6,12 +6,13 @@ body{
 
 #main{
     background:url(../../BlogPostAssets/images/wrapperbg.gif);
-    /* margin-top: 80px;
-    margin-bottom: 150px;
-    margin-left: 10%; */
-    margin: 10% 10%;
+    margin-top: 80px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 auto; */
     padding: 20 30px;
-    /* width: 960px; */
+    width: 960px;
     height:1900px;
 }
 
