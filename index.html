@@ -9,7 +9,7 @@
     <script src="./common/script/binddate.js"></script>
     <script type="text/javascript" src="common/script/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="common/script/snowfall.jquery.js"></script>
-    <script type="text/javascript">
+   <!-- <script type="text/javascript">
         $(document).ready(function(){
          $(document).snowfall({
                 minSize : 10,
@@ -19,64 +19,52 @@
                 image: "common/img/snow.png"
         });
     });
-    </script>
+    </script> -->
 </head>
 
 <body>
-    <div id="left-bar">
-        <a id="header-ico" href="#">
-            <img src="common/img/header.gif" width="128" height="128">
-        </a>
-        <div id="name" class="header-info">
-            <div style="font-size: 2em;user-select: none;" href="#">JIL</div>
-        </div>
-        <div class="header-link">
-            <a href="https://github.com/JinhaoLi">
-        		github
-        	</a>
-        </div>
-
-        <div class="bilibili-link">
-            <a href="https://space.bilibili.com/75965179">
-        		bilibili
-        	</a>
-        </div>
-
-        <div class="bilibili-link">
-            <a href="./newIndex.html">
-        		new page
-        	</a>
-        </div>
-
-    </div>
+	<header id="left-bar">
+		<a id="header-ico" href="#">
+		    <img src="common/img/header.gif">
+		</a>
+		<div id="name" >
+		    <div style="font-size: 3em;user-select: none;" href="#">JIL</div>
+		</div>
+		<nav>
+			<div>
+				<a href="https://github.com/JinhaoLi">github</a>
+			</div>
+			<div>
+				<a href="https://space.bilibili.com/75965179">bilibili</a>
+			</div>
+			<div>
+				<a href="./newIndex.html">new page</a>
+			</div>
+		</nav>
+	</header>
     <main>
-        <div id="content">
-            <div class="main-content">
-                <ul id="art-list">
-                    <li class="item" v-for="obj in items">
-                        <div class="item-img">
-                            <a v-bind:href="obj.url">
-                                <img v-bind:src="obj.pic" width="300" height="250">
-                            </a>
-                        </div>
-                        <div class="item-title">
-                            <a v-bind:href="obj.url">{{obj.title}}</a>
-                        </div>
-                        <div class="preview">
-                            {{obj.preview}}
-                        </div>
-                        <div class="item-meta">
-                            <span>发布日期:2020-6-30</span>
-                            <span> {{obj.art}}</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- <div id="page-button">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </div> -->
+        <div class="main-content">
+            <ul id="art-list" class="eul">
+				<!-- <li></li> -->
+                <li class="item" v-for="obj in items">
+                    <div class="item-img">
+                        <a v-bind:href="obj.url">
+                            <img v-bind:src="obj.pic" width="300" height="250">
+                        </a>
+                    </div>
+					<div class="item-info">
+						<a class="item-title" v-bind:href="obj.url">{{obj.title}}</a>
+						<div class="preview">
+						    {{obj.preview}}
+						</div>
+						<div class="item-meta">
+						    <span>发布日期:2020-6-30</span>
+						    <span> {{obj.art}}</span>
+						</div>
+					</div>
+                    
+                </li>
+            </ul>
         </div>
     </main>
 </body>
